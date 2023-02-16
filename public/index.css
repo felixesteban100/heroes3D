@@ -1,0 +1,328 @@
+body{
+    /* background: black; */
+    background: linear-gradient(rgb(10, 10, 10), rgb(25, 33, 98) 50%);
+    background-blend-mode: multiply;
+    color: white;
+    min-block-size: 100dvh;
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    align-items: center;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+.page{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5rem;
+    justify-content: center;
+    align-items: start;
+
+    font-size: 2rem;
+}
+
+.logo{
+    height: 8rem;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.dc:hover{
+    color: #1abeff;
+}
+
+.marvel:hover{
+    color: #ff1e00;
+}
+
+
+.container2{
+    padding: 2rem;
+    border-radius: 1rem;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform: 
+    perspective(5000px)
+    rotateY(var(--rotateY))
+    rotateX(var(--rotateX));
+}
+
+/* .container2 > * {
+    box-shadow: 0 0 3rem currentColor;
+} */
+
+.container2:active{
+    cursor: move;
+}
+
+.container2::before,
+.container2::after{
+    content: "";
+    position: absolute;
+    border-radius: inherit;
+}
+
+/* .container2::before{
+    inset: 0.75rem;
+    background: black;
+    transform: translateZ(-49px);
+    filter: blur(15px);
+    opacity: 0.5;
+} */
+
+
+.container2::after{
+    inset: -1rem;
+    transform: translateZ(-50px);
+    /* height: 50rem; */
+    /* width: 50rem; */
+}
+
+.front-image{
+    position: relative;
+    height: 30rem;
+}
+
+.button-back{
+    margin-bottom: 50rem;
+}
+
+.getBack{
+    color: white;
+}
+
+.getBack:hover{
+    color: rgb(0, 217, 255);
+}
+
+
+
+
+.batman-background::after{
+    background: url('https://media.istockphoto.com/id/542550644/photo/cortlandt-alley-by-night-in-nyc.jpg?b=1&s=170667a&w=0&k=20&c=8cTAIErZDlgD88ddaI2GWaNeA-kJ2d3-nQ12yKuDED4=');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.batman-image{
+    top: -80px;
+    left: -10px;
+}
+
+.batman-image:active{
+    filter: drop-shadow(5px 5px 5px #ffffff);
+}
+
+
+
+
+.superman-background::after{
+    background: url('https://images.pexels.com/photos/53594/blue-clouds-day-fluffy-53594.jpeg?cs=srgb&dl=pexels-pixabay-53594.jpg&fm=jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.superman-image{
+    top: -80px;
+    left: -10px;
+}
+
+.superman-image:active{
+    filter: drop-shadow(5px 5px 5px #ff1a1a);
+}
+
+
+
+
+
+.flash-background::after{
+    background: url('https://wallpapercave.com/wp/ZDRooQC.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.flash-image{
+    top: -50px;
+    left: -50px;
+}
+
+.flash-image:active{
+    filter: drop-shadow(5px 5px 5px #1abeff);
+}
+
+
+
+
+.green_lantern-background::after{
+    background: url('https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.green_lantern-image{
+    top: -80px;
+    left: -20px;
+}
+
+.green_lantern-image:active{
+    filter: drop-shadow(5px 5px 5px #96ff9f);
+}
+
+
+
+
+.wonder_woman-background::after{
+    background: url('https://img.freepik.com/premium-photo/antwerp-street-belgium_163782-2371.jpg?w=2000');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.wonder_woman-image{
+    top: -80px;
+    left: -20px;
+}
+
+.wonder_woman-image:active{
+    filter: drop-shadow(5px 5px 5px #d876ff);
+}
+
+
+
+.aquaman-background::after{
+    background: url('https://images.unsplash.com/photo-1530053969600-caed2596d242?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c2VhJTIwYmFja2dyb3VuZHxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.aquaman-image{
+    top: -50px;
+    left: 10px;
+}
+
+.aquaman-image:active{
+    filter: drop-shadow(5px 5px 5px #e5f934);
+}
+
+
+
+
+
+
+/* MARVEL */
+
+.spiderman-background::after{
+    background: url('https://images5.alphacoders.com/437/thumb-1920-437716.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.spiderman-image{
+    top: -50px;
+    left: -10px;
+}
+
+.spiderman-image:active{
+    filter: drop-shadow(5px 5px 5px #ff1e00);
+}
+
+
+
+.thor-background::after{
+    background: url('https://images.unsplash.com/photo-1465101162946-4377e57745c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3BhY2UlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.thor-image{
+    top: -50px;
+    left: -10px;
+}
+
+.thor-image:active{
+    filter: drop-shadow(5px 5px 5px #00b7ff);
+}
+
+
+.ironman-background::after{
+    background: url('https://wallpapers.com/images/featured/mvehfqz6w2ges2dj.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+
+.ironman-image{
+    top: -50px;
+    left: -10px;
+}
+
+.ironman-image:active{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
+
+
+.hulk-background::after{
+    background: url('https://i.pinimg.com/originals/bf/3a/e5/bf3ae569b5af336a42a4947e321a418a.jpg');
+    background-repeat: no-repeat;
+    background-size: 40rem 40rem;
+}
+
+.hulk-image{
+    top: -50px;
+    left: -10px;
+    height: 40rem;
+}
+
+.hulk-image:active{
+    filter: drop-shadow(5px 5px 5px #15ff00);
+}
+
+
+.black_widow-background::after{
+    background: url('https://img.freepik.com/free-photo/view-footbridge-night_1359-1078.jpg');
+    background-repeat: no-repeat;
+    background-size: 40rem 40rem;
+}
+
+.black_widow-image{
+    top: -50px;
+    left: -10px;
+    height: 40rem;
+}
+
+.black_widow-image:active{
+    filter: drop-shadow(5px 5px 5px #99f2f8);
+}
+
+
+.antman-background::after{
+    background: url('https://img.freepik.com/premium-photo/modern-empty-futuristic-room-neon-cyberpunk-style-realistic-cinematic-light-template-layout-cyber-premises-rooms-room-with-white-walls-glossy-gray-floor-neon-light-3d-illustration_76964-3788.jpg');
+    background-repeat: no-repeat;
+    background-size: 40rem 40rem;
+}
+
+.antman-image{
+    top: 25px;
+    left: 25px;
+    /* height: 15rem; */
+}
+
+.antman-image:active{
+    filter: drop-shadow(5px 5px 5px #f70f0f);
+}
+
+
+
+
+
+
+
+
+
+
