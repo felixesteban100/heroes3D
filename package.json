@@ -8,5 +8,8 @@
     "dev": "nodemon server.js"
   },
   "author": "Felix Monegro",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
