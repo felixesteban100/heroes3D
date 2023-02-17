@@ -8,6 +8,7 @@ body{
     place-items: center;
     justify-content: center;
     align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 *,
@@ -92,7 +93,7 @@ a{
 }
 
 .button-back{
-    margin-bottom: 50rem;
+    margin-bottom: 30rem;
 }
 
 .getBack{
@@ -104,6 +105,23 @@ a{
 }
 
 
+.commands-container{
+    display: flex;
+    gap: 5rem;
+    margin-bottom: 5rem;
+}
+
+.command{
+    color: white;
+}
+
+.command:hover{
+    color: yellow;
+    cursor: pointer;
+}
+
+
+
 
 
 .batman-background::after{
@@ -111,14 +129,15 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .batman-image{
     top: -80px;
     left: -10px;
 }
-
 .batman-image:active{
-    filter: drop-shadow(5px 5px 5px #ffffff);
+    filter: drop-shadow(5px 5px 5px #888282);
+}
+.batman-image-animation{
+    filter: drop-shadow(5px 5px 5px #888282);
 }
 
 
@@ -129,17 +148,16 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .superman-image{
     top: -80px;
     left: -10px;
 }
-
 .superman-image:active{
     filter: drop-shadow(5px 5px 5px #ff1a1a);
 }
-
-
+.superman-image-animation{
+    filter: drop-shadow(5px 5px 5px #ff1a1a);
+}
 
 
 
@@ -148,16 +166,16 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .flash-image{
     top: -50px;
     left: -50px;
 }
-
 .flash-image:active{
     filter: drop-shadow(5px 5px 5px #1abeff);
 }
-
+.flash-image-animation{
+    filter: drop-shadow(5px 5px 5px #1abeff);
+}
 
 
 
@@ -166,13 +184,14 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .green_lantern-image{
     top: -80px;
     left: -20px;
 }
-
 .green_lantern-image:active{
+    filter: drop-shadow(5px 5px 5px #96ff9f);
+}
+.green_lantern-image-animation{
     filter: drop-shadow(5px 5px 5px #96ff9f);
 }
 
@@ -184,13 +203,14 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .wonder_woman-image{
     top: -80px;
     left: -20px;
 }
-
 .wonder_woman-image:active{
+    filter: drop-shadow(5px 5px 5px #d876ff);
+}
+.wonder_woman-image-animation{
     filter: drop-shadow(5px 5px 5px #d876ff);
 }
 
@@ -201,17 +221,16 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .aquaman-image{
     top: -50px;
     left: 10px;
 }
-
 .aquaman-image:active{
     filter: drop-shadow(5px 5px 5px #e5f934);
 }
-
-
+.aquaman-image-animation{
+    filter: drop-shadow(5px 5px 5px #e5f934);
+}
 
 
 
@@ -223,15 +242,17 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .spiderman-image{
     top: -50px;
     left: -10px;
 }
-
 .spiderman-image:active{
     filter: drop-shadow(5px 5px 5px #ff1e00);
 }
+.spiderman-image-animation{
+    filter: drop-shadow(5px 5px 5px #ff1e00);
+}
+
 
 
 
@@ -240,15 +261,18 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .thor-image{
     top: -50px;
     left: -10px;
 }
-
 .thor-image:active{
     filter: drop-shadow(5px 5px 5px #00b7ff);
 }
+.thor-image-animation{
+    filter: drop-shadow(5px 5px 5px #00b7ff);
+}
+
+
 
 
 .ironman-background::after{
@@ -256,66 +280,80 @@ a{
     background-repeat: no-repeat;
     background-size: 35rem 30rem;
 }
-
 .ironman-image{
     top: -50px;
     left: -10px;
 }
-
 .ironman-image:active{
     filter: drop-shadow(5px 5px 5px #ffae00);
 }
+.ironman-image-animation{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
+
 
 
 .hulk-background::after{
     background: url('https://i.pinimg.com/originals/bf/3a/e5/bf3ae569b5af336a42a4947e321a418a.jpg');
     background-repeat: no-repeat;
-    background-size: 40rem 40rem;
+    background-size: 35rem 30rem;
+    top: 85px;
+    /* transform: translateY(-50px); */
 }
-
 .hulk-image{
     top: -50px;
     left: -10px;
     height: 40rem;
 }
-
 .hulk-image:active{
     filter: drop-shadow(5px 5px 5px #15ff00);
 }
+.hulk-image-animation{
+    filter: drop-shadow(5px 5px 5px #15ff00);
+}
+
+
 
 
 .black_widow-background::after{
     background: url('https://img.freepik.com/free-photo/view-footbridge-night_1359-1078.jpg');
     background-repeat: no-repeat;
-    background-size: 40rem 40rem;
+    background-size: 35rem 30rem;
+    top: -50px;
 }
-
 .black_widow-image{
     top: -50px;
     left: -10px;
-    height: 40rem;
+    /* height: 40rem; */
+}
+.black_widow-image:active{
+    filter: drop-shadow(5px 5px 5px #00eeff);
+}
+.black_widow-image-animation{
+    filter: drop-shadow(5px 5px 5px #00eeff);
 }
 
-.black_widow-image:active{
-    filter: drop-shadow(5px 5px 5px #99f2f8);
-}
+
 
 
 .antman-background::after{
     background: url('https://img.freepik.com/premium-photo/modern-empty-futuristic-room-neon-cyberpunk-style-realistic-cinematic-light-template-layout-cyber-premises-rooms-room-with-white-walls-glossy-gray-floor-neon-light-3d-illustration_76964-3788.jpg');
     background-repeat: no-repeat;
-    background-size: 40rem 40rem;
+    background-size: 35rem 30rem;
+    top: 20px;
 }
-
 .antman-image{
-    top: 25px;
-    left: 25px;
+    top: 20px;
+    left: 20px;
     /* height: 15rem; */
 }
-
 .antman-image:active{
     filter: drop-shadow(5px 5px 5px #f70f0f);
 }
+.antman-image-animation{
+    filter: drop-shadow(5px 5px 5px #f70f0f);
+}
+
 
 
 
