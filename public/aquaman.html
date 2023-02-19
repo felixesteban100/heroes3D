@@ -20,11 +20,16 @@
     <div class="container2 aquaman-background">
     <!-- <div class="container2 "> -->
         <img class="front-image aquaman-image animate__animated animate__zoomIn" src="./assets/aquaman.png" alt="">
+        <img class="logo-image aquaman-logo animate__animated animate__zoomIn animate__delay-2s" src="./assets/aquaman-logo.png" alt="">
     </div>
     <div class="commands-container">
-        <a onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
-        <a onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
-        <a onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="A" onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
+        <a id="S" onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
+        <a id="D" onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="W" onclick="applyCommand('W')" class="command">Press [W] = LOGO</a>
+        <a id="E" onclick="applyCommand('E')" class="command">Press [E] = LOGO APPEAR/DISAPPEAR</a>
     </div>
+    <audio id="audio" src="https://drive.google.com/uc?id=1To_2POwvGcMt5VVB7Hcy6BHVeQohHdzI"></audio>
+    <audio id="effect" src="https://drive.google.com/uc?id=1-tqhEofd9y_AnGfckpPknOj7T6t7sral"></audio>
 </body>
 </html>

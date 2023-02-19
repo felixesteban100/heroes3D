@@ -20,12 +20,15 @@
     <div class="container2 flash-background">
     <!-- <div class="container2 "> -->
         <img class="front-image flash-image animate__animated animate__zoomInRight" src="./assets/flash.png" alt="">
-        <!-- <img class="front-image flash-image" src="./assets/flash.png" alt=""> -->
+        <img class="logo-image flash-logo animate__animated animate__zoomInRight animate__delay-2s" src="./assets/flash-logo.png" alt="">
+
     </div>
     <div class="commands-container">
-        <a onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
-        <a onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
-        <a onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="A" onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
+        <a id="S" onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
+        <a id="D" onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="W" onclick="applyCommand('W')" class="command">Press [W] = LOGO</a>
+        <a id="E" onclick="applyCommand('E')" class="command">Press [E] = LOGO APPEAR/DISAPPEAR</a>
     </div>
     <audio id="audio" src="https://drive.google.com/uc?id=1CHSuAdSV_id5LnQ7F90JzbizPba9lfMp"></audio>
     <audio id="effect" src="https://drive.google.com/uc?id=1fySjjiYD_H19b1oPViMVseFzRG_RkPzi"></audio>

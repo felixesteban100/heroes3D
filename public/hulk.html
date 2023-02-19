@@ -20,12 +20,15 @@
     <div class="container2 hulk-background">
     <!-- <div class="container2 "> -->
         <img class="front-image hulk-image animate__animated animate__zoomInDown" src="./assets/hulk.png" alt="">
+        <img class="logo-image hulk-logo animate__animated animate__zoomIn animate__delay-2s" src="./assets/hulk-logo.png" alt="">
         <!-- <img class="front-image hulk-image" src="./assets/hulk.png" alt=""> -->
     </div>
     <div class="commands-container">
-        <a onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
-        <a onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
-        <a onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="A" onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
+        <a id="S" onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
+        <a id="D" onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="W" onclick="applyCommand('W')" class="command">Press [W] = LOGO</a>
+        <a id="E" onclick="applyCommand('E')" class="command">Press [E] = LOGO APPEAR/DISAPPEAR</a>
     </div>
     <audio id="audio" src="https://drive.google.com/uc?id=1ZkSBfWuzkAIqIm6R22XrqFEzsgz-AprU"></audio>
     <audio id="effect" src="https://drive.google.com/uc?id=1_GDBULtfMj4DthTuoYlNJMogsKLwDdD2"></audio>

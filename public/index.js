@@ -1,6 +1,7 @@
 const container2 = document.querySelector('.container2')
 
 const heroImage = document.querySelector('.front-image') 
+const heroLogo = document.querySelector('.logo-image')
 
 document.addEventListener("dragover", (e) => {
     rotateElement(e, container2)
@@ -12,10 +13,10 @@ document.addEventListener('keydown', (event) => {
 
 
 const animations = {
-    'green_lantern-image': 'animate__bounceInUp',
+    'green_lantern-image': 'animate__zoomInUp',
     'green_lantern-image2': 'animate__bounceOutUp',
     
-    'superman-image': 'animate__bounceInUp',
+    'superman-image': 'animate__zoomInUp',
     'superman-image2': 'animate__bounceOutUp',
 
     'batman-image': 'animate__fadeIn',
@@ -27,7 +28,7 @@ const animations = {
     'aquaman-image': 'animate__zoomIn',
     'aquaman-image2': 'animate__zoomOut',
 
-    'wonder_woman-image': 'animate__slideInDown',
+    'wonder_woman-image': 'animate__zoomIn',
     'wonder_woman-image2': 'animate__slideOutUp',
 
 
@@ -53,20 +54,24 @@ const animations = {
     'antman-image2': 'animate__zoomOut',
 }
 
-
 function applyCommand(key){
     const audio = document.getElementById('audio')
     const effect = document.getElementById('effect')
     switch(key){
         case 'A':
+            const buttonA = document.getElementById('A')     
+            buttonA.style.color = 'yellow'
             heroImage.classList.add(heroImage.classList[1] + '-animation');
             audio.play()
             setTimeout(() => {
                 heroImage.classList.remove(heroImage.classList[1] + '-animation');
+                buttonA.style.color = 'white'
             }, 12000)
         break;
 
         case 'S':   
+            const buttonS = document.getElementById('S')     
+            buttonS.style.color = 'yellow'
             heroImage.classList.add(heroImage.classList[1] + '-animation');
             if (heroImage.classList[5] === animations[`${heroImage.classList[1] + '2'}`]) {
                 
@@ -75,7 +80,7 @@ function applyCommand(key){
                     heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
                     heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
                     effect.play()
-                }, 2000)    
+                }, 1000)    
             }
             if (heroImage.classList[5] !== animations[`${heroImage.classList[1] + '2'}`]) {
                 heroImage.classList.add(animations[`${heroImage.classList[1] + '2'}`]);
@@ -92,17 +97,77 @@ function applyCommand(key){
             
             setTimeout(() => {
                 heroImage.classList.remove(heroImage.classList[1] + '-animation');
+                buttonS.style.color ='white'
             }, 7000)
         break;
 
         case 'D':
-            heroImage.classList.remove(animations[`${heroImage.classList[1] + '2'}`]);
+            const buttonD = document.getElementById('D')     
+            buttonD.style.color = 'yellow'
             heroImage.classList.add(heroImage.classList[1] + '-animation');
+            if (heroImage.classList[5] === animations[`${heroImage.classList[1] + '2'}`]) {
+                
+                setTimeout(() => {
+                    heroImage.classList.remove(animations[`${heroImage.classList[1] + '2'}`]);
+                    heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
+                    heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
+                    effect.play()
+                }, 1000)    
+            }
+            if (heroImage.classList[5] !== animations[`${heroImage.classList[1] + '2'}`]) {
+                heroImage.classList.remove(animations[`${heroImage.classList[1] + '2'}`]);
+                heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
+                
+                setTimeout(() => {
+                    effect.play()
+                    heroImage.classList.add(animations[`${heroImage.classList[1] + '2'}`]);
+                    heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
+                }, 1000)
+                setTimeout(() => {
+                    effect.play()
+                }, 1050)
+            }
             
             setTimeout(() => {
-                effect.play()
-                heroImage.classList.add(animations[`${heroImage.classList[1] + '2'}`]);
+                heroImage.classList.remove(heroImage.classList[1] + '-animation');
+                buttonD.style.color ='white'
             }, 7000)
+        break;
+
+        case 'W':
+            const buttonW = document.getElementById('W')     
+            buttonW.style.color = 'yellow'
+            heroImage.classList.add(heroImage.classList[1] + '-animation');
+            heroLogo.classList.remove(animations[`${heroImage.classList[1]}`]);
+            setTimeout(() => {
+                heroLogo.classList.add(animations[`${heroImage.classList[1]}`]);
+            }, 200)
+
+            setTimeout(() => {
+                heroImage.classList.remove(heroImage.classList[1] + '-animation');
+                buttonW.style.color = 'white'
+            }, 4000)
+        break;
+
+        case 'E':
+            const buttonE = document.getElementById('E')     
+            buttonE.style.color = 'yellow'
+            heroImage.classList.add(heroImage.classList[1] + '-animation');
+            heroLogo.style.visibility = heroLogo.style.visibility === 'hidden' ? "visible" : "hidden";
+
+            heroLogo.classList.remove(heroImage.classList[1] + '-animation');
+
+            setTimeout(() => {
+                heroLogo.classList.remove(heroImage.classList[1] + '-animation');
+            }, 1000)
+
+            setTimeout(() => {
+                heroImage.classList.remove(heroImage.classList[1] + '-animation');
+                buttonE.style.color = 'white'
+            }, 2000)
+        break;
+
+        default:
         break;
     }
 }

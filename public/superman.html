@@ -19,12 +19,16 @@
     </div>
     <div class="container2 superman-background">
     <!-- <div class="container2 "> -->
-        <img class="front-image superman-image animate__animated animate__bounceInUp" src="./assets/superman.png" alt="">
+        <img class="front-image superman-image animate__animated animate__zoomInUp" src="./assets/superman.png" alt="">
+        <img class="logo-image superman-logo animate__animated animate__zoomInUp animate__delay-2s" src="./assets/superman-logo.png" alt="">
+        
     </div>
     <div class="commands-container">
-        <a onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
-        <a onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
-        <a onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="A" onclick="applyCommand('A')" class="command">Press [A] = SPEAK</a>
+        <a id="S" onclick="applyCommand('S')" class="command">Press [S] = ANIMATION (APPEAR)</a>
+        <a id="D" onclick="applyCommand('D')" class="command">Press [D] = ANIMATION (DISAPPEAR)</a>
+        <a id="W" onclick="applyCommand('W')" class="command">Press [W] = LOGO</a>
+        <a id="E" onclick="applyCommand('E')" class="command">Press [E] = LOGO APPEAR/DISAPPEAR</a>
     </div>
     <audio id="audio" src="https://drive.google.com/uc?id=1FMowOhr6-lR1HOQekTHQqIZWQ4_X9KVV"></audio>
     <audio id="effect" src="https://drive.google.com/uc?id=1F3XV_5FkR9OMOpFI8x6ikvVSA954tWay"></audio>

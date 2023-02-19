@@ -9,6 +9,9 @@ body{
     justify-content: center;
     align-items: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10rem;
 }
 
 *,
@@ -19,10 +22,12 @@ body{
 
 .page{
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 5rem;
+    grid-template-columns: repeat(2, 50%);
+    gap: 2rem;
     justify-content: center;
     align-items: start;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
     font-size: 2rem;
 }
@@ -82,7 +87,7 @@ a{
 
 .container2::after{
     inset: -1rem;
-    transform: translateZ(-50px);
+    transform: translateZ(-50px) !important; 
     /* height: 50rem; */
     /* width: 50rem; */
 }
@@ -90,6 +95,12 @@ a{
 .front-image{
     position: relative;
     height: 30rem;
+}
+
+.logo-image{
+    position: absolute;
+    transform: translateZ(50px);
+    visibility: visible;
 }
 
 .button-back{
@@ -106,9 +117,10 @@ a{
 
 
 .commands-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     gap: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: -13rem;
 }
 
 .command{
@@ -139,6 +151,14 @@ a{
 .batman-image-animation{
     filter: drop-shadow(5px 5px 5px #888282);
 }
+.batman-logo{
+    height: 20rem;
+    left: -30px;
+    top: 150px;
+}
+.batman-logo:active{
+    filter: drop-shadow(5px 5px 5px #ffff3d);
+}
 
 
 
@@ -158,6 +178,11 @@ a{
 .superman-image-animation{
     filter: drop-shadow(5px 5px 5px #ff1a1a);
 }
+.superman-logo{
+    height: 20rem;
+    left: 20px;
+    top: 200px;
+}
 
 
 
@@ -176,7 +201,11 @@ a{
 .flash-image-animation{
     filter: drop-shadow(5px 5px 5px #1abeff);
 }
-
+.flash-logo{
+    height: 20rem;
+    left: 50px;
+    top: 200px;
+}
 
 
 .green_lantern-background::after{
@@ -193,6 +222,11 @@ a{
 }
 .green_lantern-image-animation{
     filter: drop-shadow(5px 5px 5px #96ff9f);
+}
+.green_lantern-logo{
+    height: 15rem;
+    left: -50px;
+    top: 250px;
 }
 
 
@@ -213,7 +247,11 @@ a{
 .wonder_woman-image-animation{
     filter: drop-shadow(5px 5px 5px #d876ff);
 }
-
+.wonder_woman-logo{
+    height: 15rem;
+    left: -35px;
+    top: 300px;
+}
 
 
 .aquaman-background::after{
@@ -231,7 +269,11 @@ a{
 .aquaman-image-animation{
     filter: drop-shadow(5px 5px 5px #e5f934);
 }
-
+.aquaman-logo{
+    height: 15rem;
+    left: -130px;
+    top: 250px;
+}
 
 
 
@@ -252,7 +294,11 @@ a{
 .spiderman-image-animation{
     filter: drop-shadow(5px 5px 5px #ff1e00);
 }
-
+.spiderman-logo{
+    height: 20rem;
+    left: 50px;
+    top: 200px;
+}
 
 
 
@@ -271,7 +317,11 @@ a{
 .thor-image-animation{
     filter: drop-shadow(5px 5px 5px #00b7ff);
 }
-
+.thor-logo{
+    height: 15rem;
+    left: -20px;
+    top: 250px;
+}
 
 
 
@@ -290,7 +340,14 @@ a{
 .ironman-image-animation{
     filter: drop-shadow(5px 5px 5px #ffae00);
 }
-
+.ironman-logo{
+    height: 25rem;
+    left: -20px;
+    top: 200px;
+}
+.ironman-logo:active{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
 
 
 .hulk-background::after{
@@ -311,7 +368,14 @@ a{
 .hulk-image-animation{
     filter: drop-shadow(5px 5px 5px #15ff00);
 }
-
+.hulk-logo{
+    height: 15rem;
+    left: -20px;
+    top: 450px;
+}
+.hulk-logo:active{
+    filter: drop-shadow(5px 5px 5px #15ff00);
+}
 
 
 
