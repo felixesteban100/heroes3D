@@ -68,6 +68,26 @@ app.get('/antman', (req, res) => {
     res.sendFile(absolutePath)
 })
 
+app.get('/shazam', (req, res) => {
+    const absolutePath = __dirname + '/public/shazam.html'
+    res.sendFile(absolutePath)
+})
+
+app.get('/martian_manhunter', (req, res) => {
+    const absolutePath = __dirname + '/public/martian_manhunter.html'
+    res.sendFile(absolutePath)
+})
+
+app.get('/doctor_strange', (req, res) => {
+    const absolutePath = __dirname + '/public/doctor_strange.html'
+    res.sendFile(absolutePath)
+})
+
+app.get('/wolverine', (req, res) => {
+    const absolutePath = __dirname + '/public/wolverine.html'
+    res.sendFile(absolutePath)
+})
+
 
 app.listen(5000, () => {
     console.log('Server listening on port 5000')

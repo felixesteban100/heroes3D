@@ -31,6 +31,11 @@ const animations = {
     'wonder_woman-image': 'animate__zoomIn',
     'wonder_woman-image2': 'animate__slideOutUp',
 
+    'shazam-image': 'animate__zoomInUp',
+    'shazam-image2': 'animate__bounceOutUp',
+    
+    'martian_manhunter-image': 'animate__zoomInUp',
+    'martian_manhunter-image2': 'animate__bounceOutUp',
 
 
     /* MARVEL */
@@ -52,6 +57,12 @@ const animations = {
 
     'antman-image': 'animate__zoomIn',
     'antman-image2': 'animate__zoomOut',
+
+    'doctor_strange-image': 'animate__zoomIn',
+    'doctor_strange-image2': 'animate__fadeOutDown',
+
+    'wolverine-image': 'animate__zoomInDown',
+    'wolverine-image2': 'animate__bounceOutUp',
 }
 
 function applyCommand(key){
@@ -186,8 +197,8 @@ function rotateElement(event, element){
     // const middleY = container.innerHeight / 2;
 
     // get offset from middle
-    const offsetX = ((x - middleX) / middleX) * 100;
-    const offsetY = ((y - middleY) / middleY) * 100;
+    const offsetX = ((x - middleX) / middleX) * 45;
+    const offsetY = ((y - middleY) / middleY) * 45;
 
     // console.log(offsetX, offsetY)
     // console.log(element)

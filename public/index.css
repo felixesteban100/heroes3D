@@ -11,7 +11,8 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 10rem;
+    margin-bottom: 20rem;
+    height: 100%;
 }
 
 *,
@@ -104,7 +105,7 @@ a{
 }
 
 .button-back{
-    margin-bottom: 30rem;
+    margin-bottom: 50rem;
 }
 
 .getBack{
@@ -120,7 +121,7 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 50%);
     gap: 5rem;
-    margin-bottom: -13rem;
+    margin-bottom: -10rem;
 }
 
 .command{
@@ -183,6 +184,9 @@ a{
     left: 20px;
     top: 200px;
 }
+.superman-logo:active{
+    filter: drop-shadow(10px 10px 10px #ffff00);
+}
 
 
 
@@ -206,6 +210,9 @@ a{
     left: 50px;
     top: 200px;
 }
+.flash-logo:active{
+    filter: drop-shadow(5px 5px 5px #1abeff);
+}
 
 
 .green_lantern-background::after{
@@ -227,6 +234,9 @@ a{
     height: 15rem;
     left: -50px;
     top: 250px;
+}
+.green_lantern-logo:active{
+    filter: drop-shadow(5px 5px 5px #96ff9f);
 }
 
 
@@ -275,6 +285,56 @@ a{
     top: 250px;
 }
 
+.shazam-background::after{
+    background: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+.shazam-image{
+    top: -80px;
+    left: -20px;
+}
+.shazam-image:active{
+    filter: drop-shadow(5px 5px 5px #fff200);
+}
+.shazam-image-animation{
+    filter: drop-shadow(5px 5px 5px #fff200);
+}
+.shazam-logo{
+    height: 25rem;
+    left: -20px;
+    top: 200px;
+}
+.shazam-logo:active{
+    filter: drop-shadow(5px 5px 5px #ff0000);
+}
+
+
+
+
+.martian_manhunter-background::after{
+    background: url('https://cdn.mos.cms.futurecdn.net/HuGGeENt6kGyixe3hT9tnY.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+.martian_manhunter-image{
+    top: -80px;
+    left: -20px;
+}
+.martian_manhunter-image:active{
+    filter: drop-shadow(5px 5px 5px #96ff9f);
+}
+.martian_manhunter-image-animation{
+    filter: drop-shadow(5px 5px 5px #96ff9f);
+}
+.martian_manhunter-logo{
+    height: 25rem;
+    left: 50px;
+    top: 200px;
+}
+.martian_manhunter-logo:active{
+    filter: drop-shadow(5px 5px 5px #ff0000);
+}
 
 
 /* MARVEL */
@@ -417,13 +477,66 @@ a{
 .antman-image-animation{
     filter: drop-shadow(5px 5px 5px #f70f0f);
 }
+.antman-logo{
+    height: 10rem;
+    left: -50px;
+    top: 400px;
+}
+.antman-logo:active{
+    filter: drop-shadow(5px 5px 5px rgb(255, 242, 242));
+}
+
+
+.doctor_strange-background::after{
+    background: url('https://wallpapercave.com/wp/wp11320672.jpg');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+.doctor_strange-image{
+    top: -50px;
+    left: -10px;
+}
+.doctor_strange-image:active{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
+.doctor_strange-image-animation{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
+.doctor_strange-logo{
+    height: 25rem;
+    left: -20px;
+    top: 200px;
+}
+.doctor_strange-logo:active{
+    filter: drop-shadow(5px 5px 5px #ffae00);
+}
 
 
 
 
-
-
-
+.wolverine-background::after{
+    background: url('https://media.istockphoto.com/id/868924326/photo/norway-in-winter.jpg?b=1&s=170667a&w=0&k=20&c=o10zlIVw4zsjgMDpqFBuCfHymF8t8a_6ev0JAiRtbhI=');
+    background-repeat: no-repeat;
+    background-size: 35rem 30rem;
+}
+.wolverine-image{
+    top: -50px;
+    left: -10px;
+}
+.wolverine-image:active{
+    filter: drop-shadow(5px 5px 5px #e5ff00);
+}
+.wolverine-image-animation{
+    filter: drop-shadow(5px 5px 5px #e5ff00);
+}
+.wolverine-logo{
+    height: 15rem;
+    left: -40px;
+    top: 300px;
+}
+.wolverine-logo:active{
+    filter: drop-shadow(5px 5px 5px #e5ff00);
+}
 
 
 
