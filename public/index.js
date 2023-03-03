@@ -74,11 +74,11 @@ function applyCommand(key){
             buttonA.style.color = 'yellow'
             heroImage.classList.add(heroImage.classList[1] + '-animation');
             audio.play()
-            navigator.vibrate(200)
+            window.navigator.vibrate(200)
             setTimeout(() => {
                 heroImage.classList.remove(heroImage.classList[1] + '-animation');
                 buttonA.style.color = 'white'
-                navigator.vibrate(0)
+                window.navigator.vibrate(0)
             }, 12000)
         break;
 
