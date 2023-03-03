@@ -74,10 +74,11 @@ function applyCommand(key){
             buttonA.style.color = 'yellow'
             heroImage.classList.add(heroImage.classList[1] + '-animation');
             audio.play()
+            navigator.vibrate(200)
             setTimeout(() => {
                 heroImage.classList.remove(heroImage.classList[1] + '-animation');
                 buttonA.style.color = 'white'
-                windows.navigator.vibrate([200,50,200])
+                navigator.vibrate(0)
             }, 12000)
         break;
 
@@ -92,7 +93,7 @@ function applyCommand(key){
                     heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
                     heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
                     effect.play()
-                    windows.navigator.vibrate([200,50,200])
+                    // windows.navigator.vibrate([200,50,200])
                 }, 1000)    
             }
             if (heroImage.classList[5] !== animations[`${heroImage.classList[1] + '2'}`]) {
@@ -102,7 +103,7 @@ function applyCommand(key){
                 setTimeout(() => {
                     heroImage.classList.remove(animations[`${heroImage.classList[1] + '2'}`]);
                     heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
-                    windows.navigator.vibrate([200,50,200])
+                    // windows.navigator.vibrate([200,50,200])
                 }, 1000)
                 setTimeout(() => {
                     effect.play()
@@ -126,7 +127,7 @@ function applyCommand(key){
                     heroImage.classList.add(animations[`${heroImage.classList[1]}`]);
                     heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
                     effect.play()
-                    windows.navigator.vibrate([200,50,200])
+                    // windows.navigator.vibrate([200,50,200])
                 }, 1000)    
             }
             if (heroImage.classList[5] !== animations[`${heroImage.classList[1] + '2'}`]) {
@@ -137,7 +138,7 @@ function applyCommand(key){
                     effect.play()
                     heroImage.classList.add(animations[`${heroImage.classList[1] + '2'}`]);
                     heroImage.classList.remove(animations[`${heroImage.classList[1]}`]);
-                    windows.navigator.vibrate([200,50,200])
+                    // windows.navigator.vibrate([200,50,200])
                 }, 1000)
                 setTimeout(() => {
                     effect.play()
@@ -157,7 +158,7 @@ function applyCommand(key){
             heroLogo.classList.remove(animations[`${heroImage.classList[1]}`]);
             setTimeout(() => {
                 heroLogo.classList.add(animations[`${heroImage.classList[1]}`]);
-                windows.navigator.vibrate([200,50,200])
+                // windows.navigator.vibrate([200,50,200])
             }, 200)
 
             setTimeout(() => {
@@ -176,7 +177,7 @@ function applyCommand(key){
 
             setTimeout(() => {
                 heroLogo.classList.remove(heroImage.classList[1] + '-animation');
-                windows.navigator.vibrate([200,50,200])
+                // windows.navigator.vibrate([200,50,200])
             }, 1000)
 
             setTimeout(() => {
